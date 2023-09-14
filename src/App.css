@@ -1,38 +1,88 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .App {
-  text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #575756;
+  box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+  border: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  list-style-type: none;
+  width: 40%;
+}
+li {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #85c8d2;
+  border-radius: 30px;
+  background-color: rgba(242, 215, 155, .7);
+}
+h1, h2, ul, p {
+  font-family: 'Open Sans', sans-serif;
+}
+.icon {
+  width: 30px;
+}
+button {
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+}
+button:hover{
+  cursor: pointer;
+}
+.img-btn {
+  width: 70px;
+}
+.img-dish {
+  border-radius: 50%;
+}
+.p-calories {
+  padding: 5px;
+  background-color: rgba(238, 62, 84, .3);
+  border-radius: 20px;
+}
+.p-healthLabels {
+  text-align: center;
+  background-color: #ddd6e8;
+  border-radius: 15px;
+}
+.cont {
+  width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  text-transform: uppercase;
+  border: 1px solid #85c8d2;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgba(242, 215, 155, 1);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.show {
+  display: block;
+}
+.none {
+  display: none;
 }
