@@ -38,6 +38,7 @@ function App() {
     const getRecipe = async () => {
       const response = await fetch(myLink);
       const data = await response.json();
+      console.log(data)
       setMyRecipes(data.hits);
       setMainArray(data.hits)
 
@@ -49,7 +50,7 @@ function App() {
       // console.log(dataTwo)
     }
     getRecipe()
-  }, [myLink])
+  }, [word, myLink])
 
   const myRecipeSearch = (e) => {
     setMySearch(e.target.value);

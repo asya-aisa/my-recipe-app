@@ -1,16 +1,4 @@
-export const FilterBox = ({isChecked, label, checkHandler, index, onClick, value}) => {
-    return(<div>
-        <input
-        type="checkbox"
-        id={`checkbox-${index}`}
-        checked={isChecked}
-        onChange={checkHandler}
-        onClick={onClick}
-        value={value}
-        />
-        <label htmlFor={`checkbox-${index}`}>{label}</label>
-    </div>)
-}
+import FilterBox from "./FilterBox";
 
 function Filters({filteredArray, setMyRecipes, mainArray, setNothingShow, arrayChecked, setArrayChecked, filters, setFilters }) {
 
